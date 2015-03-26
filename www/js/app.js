@@ -5,8 +5,8 @@
 // the 2nd parameter is an array of 'requires'
 var pouchApp = angular.module('starter', ['ionic']);
 
-var localDB = new PouchDB("todos");
-var remoteDB = new PouchDB("http://130.211.130.95:5984/todos");
+var localDB = new PouchDB("todo");
+var remoteDB = new PouchDB("http://130.211.130.95:5984/todo");
 
 pouchApp.run(function($ionicPlatform) {
 	$ionicPlatform.ready(function() {
