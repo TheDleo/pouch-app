@@ -6,7 +6,7 @@
 var pouchApp = angular.module('starter', ['ionic']);
 
 var localDB = new PouchDB("todos");
-var remoteDB = new PouchDB("http://web:user@danatfh.iriscouch.com/todos");
+var remoteDB = new PouchDB("https://couchdb-ba29c0.smileupps.com/todos");
 
 pouchApp.run(function($ionicPlatform) {
 	$ionicPlatform.ready(function() {
